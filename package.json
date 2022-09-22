@@ -9,7 +9,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "dotenv": "^16.0.2",
+    "ethers": "^5.7.1",
+    "hardhat": "^2.11.2",
+    "hardhat-gas-reporter": "^1.0.9",
     "highlightjs-solidity": "^2.0.5",
     "reveal-md": "^5.3.4"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0"
   }
 }
