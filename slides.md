@@ -47,6 +47,10 @@ https://novelinvestor.com/asset-class-returns/
 </ul>
 
 Note:
+
+Um índice é um a forma de acompanhar a performance de um grupo de ativos de uma forma padronizada.
+Geralmente índices medem a performance de uma cesta de ativos de forma a replicar um setor do mercado.
+
 fundos de índice acompanham a precificação definida majoritariamente pela gestão ativa
 é a gestão ativa quem define os preços
 os preços determinam market cap
@@ -77,6 +81,14 @@ Pra entrar no índice:
 ![](media/2022-09-22-04-08-54.png)
 
 https://www.investopedia.com/the-future-of-etfs-4772514
+
+<!--v-->
+
+### Crescimento dos ETFs
+
+<blockquote style="font-size:60%">Looking further ahead, however, Nadig believes that high-tech platforms will lead to increased competition among asset management firms and redefine the way investors think about their overall portfolios. “I think that these alternative platforms, whether you call them direct indexing or not, are the future of consolidated investment management,” he says, explaining that these shifts are part of larger technological trends that are reshaping the financial landscape.</blockquote>
+
+[🔗](https://www.investopedia.com/the-future-of-etfs-4772514)
 
 <!-- ### Title -->
 
@@ -113,69 +125,54 @@ Baratos: fundo de gestão passiva pode custar 0,03%.
 
 ### Rebalanceamento
 
-https://www.justetf.com/en/academy/what-is-portfolio-rebalancing.html
+[🔗](https://www.justetf.com/en/academy/what-is-portfolio-rebalancing.html)
 
 <!--s-->
 
-### Uniswap
-
-https://github.com/Uniswap/v3-core/blob/main/contracts/UniswapV3Pool.sol
-
-### Simular transações tenderly
-
-<!--s-->
-
-<!-- ### DeFi Llama -->
-
-<img src="media/2022-09-18-09-37-32.png" alt="" style="width:200px;"/>
-
-https://defillama.com/protocols/Indexes
-
-<!--s-->
-
-### Lending
-
-- Pq lending?
-- Lending off-chain vs on-chain
+## E em DeFI?
 
 <!--v-->
 
-### Atores
-
-- Lender
-- Borrower
-- Liquidador
-- Oracle
-
-<!--s-->
-
-### AMM
-
-- AMMs ~ fundos de investimento!
-
-https://app.balancer.fi/#/pool/0xa33e376932b2c01323f0a7f9bbe0a53f7662b2e900010000000000000000031d
-
-Ponderações
-
-- Alocação: dinâmica da pool fará com que percentual se aproxime de valor percentual fixo
-  - Valorização de moonshots tende a se encurtar
-- Impernanent loss
-
-<!--s-->
-
 ### DeFi Pulse Index
 
-https://indexcoop.com/defi-pulse-index-dpi
+<img src="media/2022-09-22-09-49-38.png" alt="DPI" style="width:200px;"/>
 
-<!--s-->
+[🔗 indexcoop.com](https://indexcoop.com/defi-pulse-index-dpi)
+
+<!--v-->
+
+### Balancer
+
+<img src="media/2022-09-22-10-30-55.png" alt="Balancer" style="width:150px;"/>
+
+<p class="fragment">AMMs são ≈ fundos de investimento?</p>
+
+<a href="https://app.balancer.fi/#/pool/0xa33e376932b2c01323f0a7f9bbe0a53f7662b2e900010000000000000000031d" class="fragment">🔗 app.balancer.fi</a>
+
+<ul>
+<li class="fragment">Fee</li>
+<li class="fragment">Liquidez</li>
+<li class="fragment">Alocação: valor % fixo</li>
+<li class="fragment">❗️ Impermanent loss</li>
+</ul>
+
+<!--v-->
 
 ### TokenSets
+
+<!--v-->
+
+### Defi Llama
+
+<img src="media/2022-09-18-09-37-32.png" alt="" style="width:200px;"/>
+
+[🔗 defillama.com](https://defillama.com/protocols/Indexes)
 
 <!--s-->
 
 ## Hands-on ✍️
 
-VSCode
+Extensões no VSCode:
 
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [JuanBlanco.solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
@@ -189,20 +186,31 @@ npx hardhat
 npm install @openzeppelin/contracts @uniswap/v2-core @uniswap/v2-periphery
 ```
 
+<!--v-->
+
 ```
 contract LiftInvest {
-  function createFund(
-    uint256[] allocation,
-    address[] token
+  constructor(
+    uint256[] memory _allocation,
+    address[] memory _tokens,
+    address[][] memory _paths
   );
   function deposit payable();
-  function withdraw();
+  function withdraw(
+    uint256 _sell_pct
+  );
 }
 ```
 
 <!--v-->
 
-##### Descobrindo o path do quickswap
+### Quickswap
+
+[🔗](https://docs.quickswap.exchange/reference/smart-contracts/router02)
+
+<!--v-->
+
+##### Descobrindo o path no Quickswap
 
 ```bash
 npm install ethers
@@ -220,16 +228,11 @@ ethers.utils.defaultAbiCoder.decode(
 
 <!--v-->
 
-##### Deploy
+##### Deploy no Tenderly
 
-- Configurar rede
+[🔗 tenderly.co](https://tenderly.co/transaction-simulator)
 
-```bash
-npx hardhat compile
-npx hardhat run scripts/deploy.js --network polygon
-```
-
-<!--s-->
+<!--v-->
 
 ### What next?
 
@@ -245,25 +248,43 @@ npx hardhat run scripts/deploy.js --network polygon
 - Batch de transações para criar um portfolio
 - Ativos 100% _non-custodial_
 
+[🔗 defibasket.org](https://defibasket.org/)
+
 <!--v-->
 
 ### Integrações possíveis
 
 - Tokens ERC-20 (_buy and hold_)
-- Lending de tokens (_receber yield_)
-- LP tokens (_fornecer liquidez_)
+- Fornecer liquidez em LPs / staking
+- Lending
 - ...
 
 <!--v-->
 
 ![](media/2022-09-18-11-46-20.png)
 
-https://docs.defibasket.org/
+[🔗 docs.defibasket.org](https://docs.defibasket.org/)
 
 <!--s-->
 
 ##### EIP-4987: Held token standard
 
-https://eips.ethereum.org/EIPS/eip-4987
+[🔗 eips.ethereum.org](https://eips.ethereum.org/EIPS/eip-4987)
 
-https://ethereum-magicians.org/t/eip-4987-held-token-standard-nfts-defi/7117/8
+[🔗 ethereum-magicians.org](https://ethereum-magicians.org/t/eip-4987-held-token-standard-nfts-defi/7117/8)
+
+<!--s-->
+
+## Extra
+
+<!--v-->
+
+### Lending
+
+- Pq lending?
+- Lending off-chain vs on-chain
+- Atores
+  - Lender
+  - Borrower
+  - Liquidador
+  - Oracle
