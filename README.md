@@ -2,7 +2,7 @@
 
 ## Aula 11
 
-[https://liftlearningdf.com](Página do curso)
+[Página do curso](https://liftlearningdf.com)
 
 Para visualizar os slides:
 
