@@ -7,9 +7,9 @@ revealOptions:
   transition: "fade"
 ---
 
-### Índices
+### Gestão de Ativos
 
-##### ou _Gestão de Ativos_
+##### _(Índices/Fundos)_
 
 Pedro Brandão<br />
 Co-Founder @ [DeFi Basket](https://defibasket.org)
@@ -22,6 +22,24 @@ _LIFT Learning – set/2022_
 <!--s-->
 
 ## Intro
+
+<!--v-->
+
+![](media/2022-09-22-18-44-18.png)
+
+[🔗 beholdstudios.com.br](https://www.beholdstudios.com.br)
+
+<!--v-->
+
+![](media/2022-09-22-18-45-26.png)
+
+[🔗 labhackercd.leg.br](https://labhackercd.leg.br)
+
+<!--v-->
+
+![](media/2022-09-22-18-46-10.png)
+
+[🔗 defibasket.org](https://www.defibasket.org)
 
 <!--s-->
 
@@ -37,15 +55,13 @@ https://novelinvestor.com/asset-class-returns/
 
 <!--v-->
 
-### Conceitos de TradFi
+### Índices
 
-<ul>
-<li class="fragment">Indexação</li>
-<li class="fragment">Fundos de índice</li>
-<li class="fragment">ETFs</li>
-<li class="fragment">Gestão ativa vs gestão passiva</li>
-</ul>
+<blockquote>
+An index is a method to track the performance of a group of assets in a standardized way. Indexes typically measure the performance of a basket of securities intended to replicate a certain area of the market.
+</blockquote>
 
+[🔗 What's an Index?](https://www.investopedia.com/terms/i/index.asp)
 Note:
 
 Um índice é um a forma de acompanhar a performance de um grupo de ativos de uma forma padronizada.
@@ -63,6 +79,8 @@ a longo prazo os fundos de gestão passiva tendem a performar melhor por serem m
 
 ### S&P 500
 
+[🔗 S&P methodology 🤯](https://www.spglobal.com/spdji/en/documents/methodologies/methodology-sp-us-indices.pdf)
+
 Notes:
 500 maiores empresas na NYSE e Nasdaq
 
@@ -76,19 +94,27 @@ Pra entrar no índice:
 
 <!--v-->
 
-### Crescimento dos ETFs
+### ETFs
 
-![](media/2022-09-22-04-08-54.png)
+_Exchange Traded Funds_: fundos negociados como ações. Alguns são de gestão ativa, mas a maioria é passiva.
 
-https://www.investopedia.com/the-future-of-etfs-4772514
+Baratos: fundo de gestão passiva pode custar 0,03%.
 
 <!--v-->
 
-### Crescimento dos ETFs
+### ETFs
 
-<blockquote style="font-size:60%">Looking further ahead, however, Nadig believes that high-tech platforms will lead to increased competition among asset management firms and redefine the way investors think about their overall portfolios. “I think that these alternative platforms, whether you call them direct indexing or not, are the future of consolidated investment management,” he says, explaining that these shifts are part of larger technological trends that are reshaping the financial landscape.</blockquote>
+![](media/2022-09-22-04-08-54.png)
 
-[🔗](https://www.investopedia.com/the-future-of-etfs-4772514)
+[🔗 The Future of ETFs](https://www.investopedia.com/the-future-of-etfs-4772514)
+
+<!--v-->
+
+### ETFs
+
+<blockquote style="font-size:60%">Nadig believes that <b>high-tech platforms</b> will lead to increased competition among asset management firms and <b>redefine the way investors think about their overall portfolios</b>. “I think that these alternative platforms, whether you call them direct indexing or not, are the future of consolidated investment management”.</blockquote>
+
+[🔗 The Future of ETFs](https://www.investopedia.com/the-future-of-etfs-4772514)
 
 <!-- ### Title -->
 
@@ -107,25 +133,21 @@ https://www.investopedia.com/the-future-of-etfs-4772514
 
 <!--v-->
 
-John Bogle
-
-<img src="./media/Jack_Bogle.jpg" alt="John Bogle" style="width:500px;"/><br />
-
-<img src="./media/vanguard-logo.png" alt="John Bogle" style="width:200px;"/>
-
-<!--v-->
-
-### ETFs
-
-_Exchange Traded Funds_: fundos negociados como ações. Alguns são de gestão ativa, mas a maioria é passiva.
-
-Baratos: fundo de gestão passiva pode custar 0,03%.
-
-<!--v-->
-
 ### Rebalanceamento
 
-[🔗](https://www.justetf.com/en/academy/what-is-portfolio-rebalancing.html)
+![](media/2022-09-22-17-54-29.png)
+
+[🔗 justetf.com](https://www.justetf.com/en/academy/what-is-portfolio-rebalancing.html)
+
+<!--v-->
+
+### Gestão ativa vs passiva
+
+<img src="media/2022-09-22-17-55-21.png" alt="" style="width:550px;"/>
+
+[🔗 Passive fund ownership of US stocks overtakes active for first time](https://www.ft.com/content/27b5e047-5080-4ebb-b02a-0bf4a3b9bc08)
+
+Note: Gestão passiva == "melhor"?
 
 <!--s-->
 
@@ -138,6 +160,20 @@ Baratos: fundo de gestão passiva pode custar 0,03%.
 <img src="media/2022-09-22-09-49-38.png" alt="DPI" style="width:200px;"/>
 
 [🔗 indexcoop.com](https://indexcoop.com/defi-pulse-index-dpi)
+
+<!--v-->
+
+### TokenSets
+
+<img src="media/2022-09-22-18-03-45.png" alt="TokenSets" style="width:200px;"/>
+
+[🔗 tokensets.com](https://www.tokensets.com)
+
+<!--v-->
+
+<img src="media/2022-09-22-18-01-12.png" alt="dHedge" style="width:400px;"/>
+
+[🔗 dHedge](https://app.dhedge.org/)
 
 <!--v-->
 
@@ -158,10 +194,6 @@ Baratos: fundo de gestão passiva pode custar 0,03%.
 
 <!--v-->
 
-### TokenSets
-
-<!--v-->
-
 ### Defi Llama
 
 <img src="media/2022-09-18-09-37-32.png" alt="" style="width:200px;"/>
@@ -170,7 +202,37 @@ Baratos: fundo de gestão passiva pode custar 0,03%.
 
 <!--s-->
 
+### DeFi Basket
+
+<!--v-->
+
+- Batch de transações para criar um portfolio
+- Ativos 100% _non-custodial_
+
+[🔗 defibasket.org](https://defibasket.org/)
+
+<!--v-->
+
+### Integrações possíveis
+
+- Tokens ERC-20 (_buy and hold_)
+- Fornecer liquidez em LPs / staking
+- Lending
+- ...
+
+<!--v-->
+
+![](media/2022-09-18-11-46-20.png)
+
+[🔗 docs.defibasket.org](https://docs.defibasket.org/)
+
+<!--s-->
+
 ## Hands-on ✍️
+
+<img src="media/2022-09-22-15-15-41.png" alt="DPI" style="width:600px;"/>
+
+<!--v-->
 
 Extensões no VSCode:
 
@@ -183,7 +245,6 @@ Extensões no VSCode:
 ```bash
 npm install hardhat
 npx hardhat
-npm install @openzeppelin/contracts @uniswap/v2-core @uniswap/v2-periphery
 ```
 
 <!--v-->
@@ -236,34 +297,10 @@ ethers.utils.defaultAbiCoder.decode(
 
 ### What next?
 
-- Implementar tokens ERC-20 que representem a alocação
-- Implementar integração com depósitos na Aave
+- Implementar tokens ERC-20 que representem a alocação (substituindo o `mapping`)
 - Adicionar `require`s
-- Permitir `paths` dinâmicos, permitindo otimização das rotas
-
-<!--s-->
-
-### DeFi Basket
-
-- Batch de transações para criar um portfolio
-- Ativos 100% _non-custodial_
-
-[🔗 defibasket.org](https://defibasket.org/)
-
-<!--v-->
-
-### Integrações possíveis
-
-- Tokens ERC-20 (_buy and hold_)
-- Fornecer liquidez em LPs / staking
-- Lending
-- ...
-
-<!--v-->
-
-![](media/2022-09-18-11-46-20.png)
-
-[🔗 docs.defibasket.org](https://docs.defibasket.org/)
+- Permitir `paths` dinâmicos (otimização das rotas)
+- Integração com um protocolo de lending (como a Aave)
 
 <!--s-->
 
@@ -275,11 +312,13 @@ ethers.utils.defaultAbiCoder.decode(
 
 <!--s-->
 
-## Extra
+### Repositório da aula
 
-<!--v-->
+[🔗 https://github.com/pgbrandao/lift-defi-aula11](https://github.com/pgbrandao/lift-defi-aula11)
 
-### Lending
+<!-- ## Extra -->
+
+<!-- ### Lending
 
 - Pq lending?
 - Lending off-chain vs on-chain
@@ -287,4 +326,4 @@ ethers.utils.defaultAbiCoder.decode(
   - Lender
   - Borrower
   - Liquidador
-  - Oracle
+  - Oracle -->
