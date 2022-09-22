@@ -46,8 +46,8 @@ contract LiftInvest {
 
         uint256 quota_price = 0;
         for (uint8 i = 0; i < allocation.length; i++) {
-            amounts[i] = uniswap_router.getAmountsOut(allocation[i], paths[i])[
-                paths[i].length - 1
+            amounts[i] = uniswap_router.getAmountsIn(allocation[i], paths[i])[
+                0
             ];
             quota_price += amounts[i];
         }
@@ -70,22 +70,20 @@ contract LiftInvest {
             shares[_token][msg.sender] += bought;
         }
 
-        // emit LOG_DEPOSIT(msg.sender, msg.value);
+        emit LOG_DEPOSIT(msg.sender, msg.value);
     }
 
     function withdraw(
         uint256 _sell_pct
     ) external {
-        uint256 eth_amount = 0;
-        // address[] memory tokens = indexes[_index_id].tokens;
-        uint256[] memory result;
-
-        // require(_sell_pct > 0, "SELL PCT NEEDS TO BE GREATER THAN ZERO");
-        // require(
-        //     indexes[_index_id].shares[tokens[0]][msg.sender] > 0,
-        //     "NEEDS TO HAVE SHARES OF THE INDEX"
-        // );
+        require(_sell_pct > 0, "SELL PCT NEEDS TO BE GREATER THAN ZERO");
+        require(
+            shares[tokens[0]][msg.sender] > 0,
+            "NEEDS TO HAVE SHARES OF THE INDEX"
+        );
         require(_sell_pct <= 100, "CAN'T SELL MORE THAN 100% OF FUNDS");
+
+        uint256 eth_amount = 0;
 
         for (uint256 i = 0; i < tokens.length; i++) {
             address _token = tokens[i];

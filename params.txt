@@ -20,7 +20,7 @@ Params de deploy (2)
 _allocation
 [1000000000, 1000000000]
 
-_tokens (DAI)
+_tokens (DAI, QUICK(new))
 ["0x8f3cf7ad23cd3cadbd9735aff958023239c6a063", "0xB5C064F955D8e7F38fE0460C556a72987494eE17"]
 
 _paths
